@@ -1,0 +1,20 @@
+package ma.inpt.accountmanagement.ui.model.request;
+
+import lombok.Data;
+import org.springframework.web.multipart.MultipartFile;
+
+@Data
+public class OrganisationDetailsRequestModel {
+    private String name;
+    private String email;
+    private String password;
+    private Long rib;
+    private String category;
+    private boolean verified;
+    private MultipartFile verificationFile;
+    private MultipartFile image;
+    private String Location;
+    private String description;
+    private String phoneNumber;
+
+}
